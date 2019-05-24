@@ -7,12 +7,13 @@
 
 from builtins import str
 
-from gensim import corpora, models, similarities  # to create a dictionary
+from gensim import corpora  # to create a dictionary
 import os
 import csv
 
 
-import tethne.model.corpus.dtmmodel as dtmmodel
+#import tethne.model.corpus.dtmmodel as dtmmodel
+import dtmmodel
 
 # Set years, this would be the timestamps
 #time_stamps = [['51', '52', '53', '54', '55'], ['56', '57', '58', '59', '0'], ['1', '2', '3', '4', '5']]
