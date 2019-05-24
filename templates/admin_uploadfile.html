@@ -1,0 +1,65 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="jumbotron text-center" style="background-color: #89D1F5;"><h1><br>Add New Dataset</h1></div>
+
+<!-- Content Row -->
+          <div class="card shadow mb-4">
+
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="card shadow mb-4">
+              <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+
+                           {% if error %}
+                            <div class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+                             <p><strong>Error: </strong> {{ error }}
+                                 </div><br><br><br>
+                          {% endif %}
+
+
+
+
+                         <form action = "/upload" method = "POST" enctype = "multipart/form-data">
+
+                             Select the Field :
+                            <select name="field" >
+                              <option value="1">Politics</option>
+                              <option value="2">Education</option>
+                              <option value="3">Terrorism</option>
+
+
+
+                            </select><br><br>
+                             Date of the Tweets  :
+                             <select name="tweetdate" >
+                                  <option value="201810">October 2018</option>
+                                  <option value="201811">November 2018</option>
+                                  <option value="201812">December 2018</option>
+                                  <option value="201901">January 2019</option>
+                                  <option value="201902">February 2019</option>
+                                  <option value="201903">March 2019</option>
+                                 <option value="201904">April 2019</option>
+                             </select><br><br>
+                             <input type = "file" name = "file" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" /><br><br>
+                             <input type = "submit" value="Upload Datafile" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" /><br><br>
+                          </form>
+
+                      </div>
+                    </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+</div>
+
+
+
+{% endblock %}
+
+ 
+
+  

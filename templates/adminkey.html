@@ -1,0 +1,41 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="jumbotron text-center" style="background-color: #89D1F5;"><h1><br>Enter Admin Key</h1></div>
+
+
+
+
+<!-- Content Row -->
+          <div class="card shadow mb-4">
+
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="card shadow mb-4">
+              <div class="card border-left-primary shadow h-100 py-2">
+                <div class="card-body">
+                  <div class="row no-gutters align-items-center">
+                    <div class="col mr-2">
+
+
+                         <form action="/validate" method="POST">
+                              Admin Key :  <input type="password" name="key"><br><br>
+
+                              <input type="submit"  value="Get Access" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" ><br><br>
+                         </form>
+
+                      </div>
+                    </div>
+                    </div>
+              </div>
+            </div>
+          </div>
+</div>
+
+
+
+{% endblock %}
+
+ 
+
+  
