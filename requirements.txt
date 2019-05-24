@@ -27,6 +27,3 @@ virtualenv==16.6.0
 Werkzeug==0.14.1
 wikipedia==1.4.0
 wikipedia2vec==1.0.1
-wordnet
-pros_cons
-reuters
