@@ -1,14 +1,14 @@
-from flask import Flask, render_template , request,flash,Session
+from flask import render_template
 import os
-from flask import Flask, request, redirect, url_for
+from flask import Flask, request
 from werkzeug.utils import secure_filename
 
 ALLOWED_EXTENSIONS =['txt']
 
 app = Flask(__name__)
-app.config['SESSION_TYPE'] = 'memcached'
-app.config['SECRET_KEY'] = 'super secret key'
-sess = Session()
+#app.config['SESSION_TYPE'] = 'memcached'
+#app.config['SECRET_KEY'] = 'super secret key'
+#sess = Session()
 
 from plotter import getPlot
 from predictor import getFuturePlot
@@ -88,13 +88,13 @@ def upload():
             print(filename)
 
 
-            flash('Uploading the file...')
+
             file.save(os.path.join('Temp', filename))
 
             path=get_file_path(field)
 
             preprocessTweets(tweetdate=tweetdate,file=filename,storeFolder=path)
-            flash('successfully uploaded')
+
             return render_template('home.html')
         error="Invalid file type"
         return render_template('admin_uploadfile.html', error=error)
