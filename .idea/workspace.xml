@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3f60e29-c262-4c56-a434-58a043579dba" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dtm_gensim-master/testing_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/dtm_gensim-master/testing_file.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dtm_gensim-master/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/dtm_gensim-master/app.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,11 +27,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dtm_gensim-master/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+            <state relative-caret-position="404">
+              <caret line="177" column="12" selection-start-line="177" selection-start-column="12" selection-end-line="177" selection-end-column="12" />
               <folding>
                 <element signature="e#0#64#0" expanded="true" />
               </folding>
@@ -41,10 +39,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="181">
               <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
             </state>
           </provider>
@@ -224,9 +222,9 @@
         <option value="$PROJECT_DIR$/dtm_gensim-master/matcharticles.py" />
         <option value="$PROJECT_DIR$/dtm_gensim-master/bigdata.py" />
         <option value="$PROJECT_DIR$/dtm_gensim-master/templates/includes/_navbar.html" />
-        <option value="$PROJECT_DIR$/dtm_gensim-master/app.py" />
         <option value="$PROJECT_DIR$/dtm_gensim-master/testing_file.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/dtm_gensim-master/app.py" />
       </list>
     </option>
   </component>
@@ -442,7 +440,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.443038" visible="true" weight="0.22470239" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.443038" visible="true" weight="0.22470239" />
       <window_info auto_hide="true" x="635" y="526" width="448" height="159" id="Structure" order="1" show_stripe_button="false" sideWeight="0.556962" side_tool="true" weight="0.28645834" />
       <window_info id="Favorites" order="2" sideWeight="0.556962" side_tool="true" weight="0.28645834" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -450,7 +448,7 @@
       <window_info anchor="bottom" id="Debug" order="2" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="Run" order="5" sideWeight="0.5014881" side_tool="true" visible="true" weight="0.05782313" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.5014881" side_tool="true" visible="true" weight="0.05782313" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.8052373" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.9489796" />
       <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4985119" weight="0.35034013" />
@@ -728,16 +726,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="38" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#64#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dtm_gensim-master/templates/testfuturegraph.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -767,8 +755,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
+        <state relative-caret-position="181">
           <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="177" column="12" selection-start-line="177" selection-start-column="12" selection-end-line="177" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#64#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
