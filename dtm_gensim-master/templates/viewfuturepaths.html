@@ -1,0 +1,72 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+
+<div class="jumbotron text-center" style="background-color: #89D1F5;"><h1><br>Predict Future Topic Pathways</h1></div>
+
+<!-- Content Row -->
+          <div class="card shadow mb-4">
+
+            <!-- Earnings (Monthly) Card Example -->
+            <div class="card shadow mb-4">
+              <div class="card border-left-primary shadow h-100 py-2">
+
+                <div class="card-body">
+
+                         {% if error %}
+                            <div class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+                             <p><strong>Error: </strong> {{ error }}
+                                 </div><br><br><br>
+                          {% endif %}
+
+
+                        <form action = "/testfuturepy" method = "POST">
+
+
+
+                            Select the topic :
+                            <select name="topic" >
+                              <option value="1">Topic 1</option>
+                              <option value="2">Topic 2</option>
+                              <option value="3">Topic 3</option>
+                              <option value="4">Topic 4</option>
+                                <option value="5">Topic5</option>
+
+
+                            </select>
+                            <br><br>
+
+                          End Date  :
+                         <select name="end" >
+                                  <option value="201810">October 2018</option>
+                                  <option value="201811">November 2018</option>
+                                  <option value="201812">December 2018</option>
+                                  <option value="201901">January 2019</option>
+                                  <option value="201902">February 2019</option>
+                                  <option value="201903">March 2019</option>
+                                 <option value="201904">April 2019</option>
+                             </select><br><br>
+
+                        <input type = "submit" value = "Predict Future Topic Evolution" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" />
+
+
+                          <br><br>
+                          </form>
+
+
+
+
+
+
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+{% endblock %}
