@@ -1,6 +1,5 @@
 dill==0.2.9
 docutils==0.14
-https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.1.0/en_core_web_sm-2.1.0.tar.gz#egg=en_core_web_sm==2.1.0
 Flask==1.0.2
 future==0.17.1
 gensim==3.7.1
@@ -8,8 +7,6 @@ gunicorn==19.9.0
 h5py==2.9.0
 html5lib==1.0.1
 Jinja2==2.10
-Keras-Applications==1.0.7
-Keras-Preprocessing==1.0.9
 lmdb==0.94
 nltk==3.4
 numpy==1.16.1
@@ -30,3 +27,6 @@ virtualenv==16.6.0
 Werkzeug==0.14.1
 wikipedia==1.4.0
 wikipedia2vec==1.0.1
+wordnet
+pros_cons
+reuters
