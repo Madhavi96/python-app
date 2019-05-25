@@ -25,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dtm_init.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+            <state relative-caret-position="30">
+              <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
               <folding>
                 <element signature="e#9#18#0" expanded="true" />
               </folding>
@@ -352,6 +352,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.443038" visible="true" weight="0.22470239" />
       <window_info auto_hide="true" x="635" y="526" width="448" height="159" id="Structure" order="1" show_stripe_button="false" sideWeight="0.556962" side_tool="true" weight="0.28645834" />
@@ -409,118 +410,28 @@
     <entry file="file://$PROJECT_DIR$/dtm_gensim-master/OutputDTM7.csv" />
     <entry file="file://$PROJECT_DIR$/dtm_gensim-master/OutputDTM8.csv" />
     <entry file="file://$PROJECT_DIR$/dtm_gensim-master/OutputDTM9.csv" />
-    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/OutputDTM2.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/OutputDTM3.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/OutputDTM1.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/OutputDTM2.csv" />
+    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/OutputDTM3.csv" />
+    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/OutputDTM1.csv" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/tethne/model/dtmmodel.py" />
-    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/OutputDTM4.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/OutputDTM4.csv" />
     <entry file="file://$PROJECT_DIR$/dtm_gensim-master/testdb_pol/oct.txt" />
-    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/data/output/em_log.dat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/data/output/initial-lda.beta">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/data/output/initial-lda-ss.dat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="31085" selection-start-line="31085" selection-end-line="31085" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/data/output/lda-seq/info.dat">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/data/output/lda-seq/lhoods.dat">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/data/output/lda-seq/topic-000-info.dat">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/data/output/lda-seq/topic-000-var-e-log-prob.dat">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/data/output/lda-seq/gam.dat">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/data/output/initial-lda.alpha">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/data/-mult.dat">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/data/vocabulary.dat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7">
-          <caret line="21" column="8" selection-start-line="21" selection-start-column="8" selection-end-line="21" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/data/metadata.dat">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="34516" selection-start-line="34516" selection-end-line="34516" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/data/dictionary.dict">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/data/-seq.dat">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/OutputDTM0.csv">
-      <provider editor-type-id="csv-table-editor">
-        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
-      </provider>
-      <provider selected="true" editor-type-id="csv-text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/templates/adminkey.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="69" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="69" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/data/output/em_log.dat" />
+    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/data/output/initial-lda.beta" />
+    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/data/output/initial-lda-ss.dat" />
+    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/data/output/lda-seq/info.dat" />
+    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/data/output/lda-seq/lhoods.dat" />
+    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/data/output/lda-seq/topic-000-info.dat" />
+    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/data/output/lda-seq/topic-000-var-e-log-prob.dat" />
+    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/data/output/lda-seq/gam.dat" />
+    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/data/output/initial-lda.alpha" />
+    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/data/-mult.dat" />
+    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/data/vocabulary.dat" />
+    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/data/metadata.dat" />
+    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/data/dictionary.dict" />
+    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/data/-seq.dat" />
+    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/OutputDTM0.csv" />
+    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/templates/adminkey.html" />
     <entry file="file://$PROJECT_DIR$/dtm_gensim-master/data/output/lda-seq/topic-005-info.dat" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/tethne/model/corpus/dtmmodel.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -532,51 +443,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/matcharticles.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="99">
-          <caret line="45" selection-start-line="45" selection-end-line="45" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="69" selection-start-line="4" selection-start-column="69" selection-end-line="4" selection-end-column="69" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/templates/layout.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/matcharticles.py" />
+    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/templates/home.html" />
+    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/templates/layout.html" />
     <entry file="file://$PROJECT_DIR$/dtm_gensim-master/bigdata.py" />
-    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/templates/admin_uploadfile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="748">
-          <caret line="44" column="75" selection-start-line="44" selection-start-column="75" selection-end-line="44" selection-end-column="75" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/templates/includes/_navbar.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/templates/admin_uploadfile.html" />
+    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/templates/includes/_navbar.html" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/flask/helpers.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="21">
@@ -584,20 +456,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/app.py">
+    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/app.py" />
+    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/testing_file.py" />
+    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/preprocess.py" />
+    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/templates/testfuturegraph.html" />
+    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/plotter.py" />
+    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/templates/testgraph.html" />
+    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/templates/viewfuturepaths.html" />
+    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/templates/viewpaths.html" />
+    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/dtmmodel.py" />
+    <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/testing_file.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2346">
-          <caret line="146" column="30" selection-start-line="146" selection-start-column="24" selection-end-line="146" selection-end-column="30" />
-          <folding>
-            <element signature="e#181#205#0" expanded="true" />
-          </folding>
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -608,82 +479,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/preprocess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="69" column="64" selection-start-line="69" selection-start-column="64" selection-end-line="69" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/templates/testfuturegraph.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="72" selection-start-line="15" selection-start-column="72" selection-end-line="15" selection-end-column="72" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/plotter.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/templates/testgraph.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="72" selection-start-line="16" selection-start-column="72" selection-end-line="16" selection-end-column="72" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/templates/viewfuturepaths.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="69" selection-start-line="4" selection-start-column="69" selection-end-line="4" selection-end-column="69" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/templates/viewpaths.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/dtmmodel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
-          <folding>
-            <element signature="e#65#83#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Procfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" selection-start-column="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dtm_init.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="23" column="24" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        <state relative-caret-position="30">
+          <caret line="18" column="36" lean-forward="true" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
           <folding>
             <element signature="e#9#18#0" expanded="true" />
           </folding>
