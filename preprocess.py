@@ -4,8 +4,8 @@ import json
 import warnings
 warnings.filterwarnings("ignore",category=DeprecationWarning)
 import nltk
+stopwords=nltk.download('stopwords')
 
-from nltk.corpus import stopwords
 stop_words = stopwords.words('english')
 stop_words.extend(set('for a of the and to in'.split()))
 
