@@ -1,9 +1,4 @@
 # Generate dat file with tweets
-# @author Matias Hurtado - PUC Chile
-
-# Import some modules for reading and getting data.
-# If you don't have this modules, you must install them.
-
 
 from builtins import str
 
@@ -12,13 +7,7 @@ import os
 import csv
 
 
-#import tethne.model.corpus.dtmmodel as dtmmodel
 import dtmmodel
-
-# Set years, this would be the timestamps
-#time_stamps = [['51', '52', '53', '54', '55'], ['56', '57', '58', '59', '0'], ['1', '2', '3', '4', '5']]
-
-
 
 
 

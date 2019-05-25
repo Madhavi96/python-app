@@ -3,16 +3,16 @@ logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=lo
 import json
 import warnings
 warnings.filterwarnings("ignore",category=DeprecationWarning)
-
+import nltk
+nltk.data.path.append('nltk_data')
 from nltk.corpus import stopwords
 stop_words = stopwords.words('english')
 stop_words.extend(set('for a of the and to in'.split()))
 
 from builtins import str
 import re
-import nltk
+
 from nltk.stem.wordnet import WordNetLemmatizer
-from nltk.corpus import stopwords
 import os
 
 
