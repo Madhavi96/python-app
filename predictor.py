@@ -21,11 +21,12 @@ def getFuturePlot(end=None,topic_number=None):
         next(csvFileReader)
         next(csvFileReader)
         for row in csvFileReader:
-            next(csvFileReader)
-            dates.append(row[2])
-
-            prob.append(float('%.16f'%(float(row[3]))))
-            topic_chain.append(row[1])
+            if row != '\n':
+                dates.append(row[2])
+                prob.append(float('%.16f'%(float(row[3]))))
+                topic_chain.append(row[1])
+            else:
+                pass
 
         start_old=months.index(dates[0])
         end_old = months.index(dates[-1])

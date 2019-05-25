@@ -192,7 +192,6 @@ class Handler:
 
         mymodel= DTModeller()
         mymodel.make_dtm()
-        #mymodel.writeTopics(numtimes=len(self.timestamps))
         mymodel.writeTopics(numtimes=len(self.timestamps),months=self.monthstamps)
 
 
