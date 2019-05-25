@@ -6,14 +6,13 @@ import numpy as np
 import os
 import re
 import csv
-from collections import Counter
 import sys
 from operator import  itemgetter
 PYTHON_3 = sys.version_info[0] == 3
 if PYTHON_3:
     unicode = str
 
-import concurrent.futures
+
 
 import sys
 if sys.version_info[0] > 2:
@@ -25,9 +24,9 @@ logging.basicConfig()
 logger = logging.getLogger(__name__)
 logger.setLevel('DEBUG')
 
-from tethne import write_documents, Feature, FeatureSet
-from tethne.model.__init__ import Model
-import tethne
+
+from dtm_init import Model
+
 
 class DTMModel(Model):
     """
