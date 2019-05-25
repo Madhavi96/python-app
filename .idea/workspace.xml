@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3f60e29-c262-4c56-a434-58a043579dba" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/preprocess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/predictor.py" beforeDir="false" afterPath="$PROJECT_DIR$/predictor.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,11 +37,34 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/preprocess.py">
+        <entry file="file://$PROJECT_DIR$/predictor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+            <state relative-caret-position="391">
+              <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#10#0" expanded="true" />
+              </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testing_file.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2163">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="e#33#57#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OutputDTM0.csv">
+          <provider selected="true" editor-type-id="csv-text-editor" />
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
           </provider>
         </entry>
       </file>
@@ -116,7 +139,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/multiprocessing/spawn.py" />
         <option value="$PROJECT_DIR$/dtm_gensim-master/viewtopicpathways.py" />
         <option value="$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/gensim/models/ldaseqmodel.py" />
         <option value="$PROJECT_DIR$/dtm_gensim-master/get_data_and_generate_corpus_with_gensim.py" />
@@ -167,6 +189,7 @@
         <option value="$PROJECT_DIR$/dtmmodel.py" />
         <option value="$PROJECT_DIR$/testing_file.py" />
         <option value="$PROJECT_DIR$/preprocess.py" />
+        <option value="$PROJECT_DIR$/predictor.py" />
       </list>
     </option>
   </component>
@@ -419,7 +442,6 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/OutputDTM7.csv" />
     <entry file="file://$PROJECT_DIR$/dtm_gensim-master/OutputDTM8.csv" />
     <entry file="file://$PROJECT_DIR$/dtm_gensim-master/OutputDTM9.csv" />
     <entry file="file://$PROJECT_DIR$/dtm_gensim-master/OutputDTM2.csv" />
@@ -501,6 +523,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/plotter.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OutputDTM0.csv">
+      <provider selected="true" editor-type-id="csv-text-editor" />
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="333">
+          <caret line="75" lean-forward="true" selection-start-line="75" selection-end-line="75" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dtm_init.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -513,30 +551,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/testing_file.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="-2163">
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           <folding>
-            <element signature="e#181#205#0" expanded="true" />
+            <element signature="e#33#57#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/predictor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="391">
+          <caret line="23" column="31" selection-start-line="23" selection-start-column="31" selection-end-line="23" selection-end-column="31" />
           <folding>
             <element signature="e#0#10#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plotter.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/preprocess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="9" lean-forward="true" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
         </state>
       </provider>
     </entry>
