@@ -8,7 +8,7 @@ import csv
 ALLOWED_EXTENSIONS =['txt']
 
 app = Flask(__name__)
-
+app.config['TOPICS_VIEWED'] = False
 
 from plotter import getPlot
 from predictor import getFuturePlot
