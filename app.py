@@ -81,23 +81,36 @@ def upload():
         if file.filename == '':
             error = "No file selected"
             return render_template('admin_uploadfile.html', error=error)
-        if file and allowed_file(file.filename):
 
-            app.config['TEMP_FOLDER'] = 'Temp'
-            filename = secure_filename(file.filename)
-            print(filename)
+        try:
+            # write to permanant store
+            processedfolder=get_file_path(field)
+            file = open(os.path.join(processedfolder, tweetdate), 'r')
+            error = "You have already uploaded dataset!"
+            return render_template('admin_uploadfile.html', error=error)
 
 
 
-            file.save(os.path.join('Temp', filename))
+        except FileNotFoundError:
 
-            path=get_file_path(field)
 
-            preprocessTweets(tweetdate=tweetdate,file=filename,storeFolder=path)
+            if file and allowed_file(file.filename):
 
-            return render_template('home.html')
-        error="Invalid file type"
-        return render_template('admin_uploadfile.html', error=error)
+                app.config['TEMP_FOLDER'] = 'Temp'
+                filename = secure_filename(file.filename)
+                print(filename)
+
+
+
+                file.save(os.path.join('Temp', filename))
+
+                path=get_file_path(field)
+
+                preprocessTweets(tweetdate=tweetdate,file=filename,storeFolder=path)
+
+                return render_template('home.html')
+            error="Invalid file type"
+            return render_template('admin_uploadfile.html', error=error)
 
 
 
