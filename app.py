@@ -4,11 +4,11 @@ from flask import Flask, request
 from werkzeug.utils import secure_filename
 import json
 import csv
+import pandas as pd
 
 ALLOWED_EXTENSIONS =['txt']
 
 app = Flask(__name__)
-app.config['TOPICS_VIEWED'] = False
 
 from plotter import getPlot
 from predictor import getFuturePlot
@@ -172,7 +172,7 @@ def testpy():
                         write=[int(i), dataseries[i]['annotes'][year_i], xdates[year_i], dataseries[i]['data'][year_i]]
                         writer.writerow(write)
                         print(write)
-            app.config['TOPICS_VIEWED'] = True
+
             return render_template('testgraph.html', xdates=renderlist[0], dataseries=renderlist[1], articles=renderlist[2])
 
 
@@ -194,7 +194,7 @@ def testpy():
                 f.write(jsonstr + "\n")
             f.flush()
             f.close()
-        app.config['TOPICS_VIEWED'] = True
+
         return render_template('testgraph.html', xdates=xdates, dataseries=dataseries,articles=articles)
     return
 
@@ -207,7 +207,10 @@ def testfuturepy():
 
         end_date = result["end"]
 
-        if app.config['TOPICS_VIEWED'] == True:
+        df = pd.read_csv('OutputDTM0')  # or pd.read_excel(filename) for xls file
+        no_paths_viewed=df.empty  # will return True if the dataframe is empty or False if not.
+
+        if no_paths_viewed == False:
             getdict = getFuturePlot(topic_number=topic, end=end_date)
             if getdict == "":
                 error = "Invalid End Month"
