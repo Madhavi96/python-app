@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="c3f60e29-c262-4c56-a434-58a043579dba" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin_uploadfile.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin_uploadfile.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,11 +31,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="88" column="55" selection-start-line="88" selection-start-column="55" selection-end-line="88" selection-end-column="55" />
+            <state relative-caret-position="216">
+              <caret line="76" column="52" lean-forward="true" selection-start-line="76" selection-start-column="52" selection-end-line="76" selection-end-column="52" />
               <folding>
                 <element signature="e#0#33#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/admin_uploadfile.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="37">
+              <caret line="25" column="48" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -98,7 +108,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dtm_gensim-master/get_data_and_generate_corpus_with_gensim.py" />
         <option value="$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/tethne-0.8-py3.6.egg/tethne/model/corpus/dtmmodel.py" />
         <option value="$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/mpld3/_display.py" />
         <option value="$PROJECT_DIR$/dtm_gensim-master/interactive_plotter.py" />
@@ -148,6 +157,7 @@
         <option value="$PROJECT_DIR$/testing_file.py" />
         <option value="$PROJECT_DIR$/predictor.py" />
         <option value="$PROJECT_DIR$/matcharticles.py" />
+        <option value="$PROJECT_DIR$/templates/admin_uploadfile.html" />
         <option value="$PROJECT_DIR$/app.py" />
       </list>
     </option>
@@ -191,6 +201,16 @@
             <path>
               <item name="TopicModellerApp" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+            </path>
+            <path>
+              <item name="TopicModellerApp" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="templates" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+            </path>
+            <path>
+              <item name="TopicModellerApp" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="terrorism_tweetdb" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -401,7 +421,6 @@
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.css" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dtm_gensim-master/OutputDTM2.csv" />
     <entry file="file://$PROJECT_DIR$/dtm_gensim-master/OutputDTM3.csv" />
     <entry file="file://$PROJECT_DIR$/dtm_gensim-master/OutputDTM1.csv" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/tethne/model/dtmmodel.py" />
@@ -533,10 +552,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/admin_uploadfile.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="37">
+          <caret line="25" column="48" selection-start-line="25" selection-start-column="48" selection-end-line="25" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="88" column="55" selection-start-line="88" selection-start-column="55" selection-end-line="88" selection-end-column="55" />
+        <state relative-caret-position="216">
+          <caret line="76" column="52" lean-forward="true" selection-start-line="76" selection-start-column="52" selection-end-line="76" selection-end-column="52" />
           <folding>
             <element signature="e#0#33#0" expanded="true" />
           </folding>

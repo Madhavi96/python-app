@@ -57,8 +57,6 @@ def get_file_path(field):
     return  UPLOAD_FOLDER
 
 
-
-
 @app.route('/upload', methods = ['GET', 'POST'])
 def upload():
     if request.method == 'POST':
