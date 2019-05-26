@@ -114,6 +114,7 @@ def testpy():
             error = "Invalid Month Range"
             #raise ValueError
             return render_template('viewpaths.html', error=error)
+        files = ['OutputDTM0.csv', 'OutputDTM1.csv', 'OutputDTM2.csv', 'OutputDTM3.csv', 'OutputDTM4.csv']
         resultstore = start_date + end_date
         if field == '1':
             storeinfolder = 'result_topics_pol'
@@ -133,10 +134,10 @@ def testpy():
                 i = i + 1
             print(renderlist[2])
             # write the topics just viewd-for future plot
-            files = ['OutputDTM0.csv', 'OutputDTM1.csv', 'OutputDTM2.csv', 'OutputDTM3.csv', 'OutputDTM4.csv']
+
             xdates = renderlist[0]
             dataseries = renderlist[1]
-
+            print("++++++++++++++++++++++++++++++++++")
             for i in range(5):
                 with open(files[i], 'w', encoding='utf-8') as csvfile:
                     writer = csv.writer(csvfile, delimiter=',')
@@ -144,11 +145,11 @@ def testpy():
                     writer.writerow(['TopicID', 'Word', 'Year', 'Probability'])
 
                     for year_i in range(len(xdates)):
-                        writer.writerow(
-                            [int(i), dataseries[i]['annotes'][year_i], xdates[year_i], dataseries[i]['data'][year_i]])
+                        write=[int(i), dataseries[i]['annotes'][year_i], xdates[year_i], dataseries[i]['data'][year_i]]
+                        writer.writerow(write)
+                        print(write)
 
-            return render_template('testgraph.html', xdates=renderlist[0], dataseries=renderlist[1],
-                                   articles=renderlist[2])
+            return render_template('testgraph.html', xdates=renderlist[0], dataseries=renderlist[1], articles=renderlist[2])
 
 
         except FileNotFoundError:
