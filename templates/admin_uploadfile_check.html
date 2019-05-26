@@ -20,7 +20,7 @@
                                  </div><br><br><br>
                           {% endif %}
 
-                         <form action = "/upload" method = "POST" enctype = "multipart/form-data">
+                         <form action = "/uploadcheck" method = "POST" enctype = "multipart/form-data">
 
                              Select the Field :
                             <select name="field" >
@@ -39,9 +39,8 @@
                                   <option value="201903">March 2019</option>
                                  <option value="201904">April 2019</option>
                              </select><br><br>
+                             <input type = "submit" value="Check Previous Uploads" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" /><br><br>
 
-                             <input type = "file" name = "file" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" /><br><br>
-                             <input type = "submit" value="Upload New Datafile" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm" /><br><br>
 
                           </form>
 
@@ -57,5 +56,6 @@
 
 {% endblock %}
 
+ 
 
-
+  

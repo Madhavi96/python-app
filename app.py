@@ -32,7 +32,7 @@ def validate():
         result = request.form
         key=result["key"]
         if key==secret_key:
-            return render_template('admin_uploadfile.html')
+            return render_template('admin_uploadfile_check.html')
         else:
             return render_template('adminkey.html')
 
@@ -56,10 +56,30 @@ def get_file_path(field):
 
     return  UPLOAD_FOLDER
 
+@app.route('/uploadcheck', methods = ['GET', 'POST'])
+def uploadcheck():
+
+    if request.method == 'POST':
+        field = request.form["field"]
+        tweetdate = request.form["tweetdate"]
+
+
+        try:
+            # write to permanant store
+            processedfolder=get_file_path(field)
+            file = open(os.path.join(processedfolder, tweetdate), 'r')
+            error = "You have already uploaded dataset!"
+            return render_template('admin_uploadfile_check.html', error=error)
+        except FileNotFoundError:
+            error = "No file was found!"
+            return render_template('admin_uploadfile.html', error=error)
+
+
+
 
 @app.route('/upload', methods = ['GET', 'POST'])
 def upload():
-    print(request.form["tweetdate"])
+  
 
     if request.method == 'POST':
         field = request.form["field"]
@@ -75,42 +95,33 @@ def upload():
             error="No file selected"
 
             return render_template('admin_uploadfile.html', error=error)
-        try:
-            # write to permanant store
-            processedfolder=get_file_path(field)
-            file = open(os.path.join(processedfolder, tweetdate), 'r')
-            error = "You have already uploaded dataset!"
+
+
+        file = request.files['file']
+        # if user does not select file, browser also
+        # submit a empty part without filename
+        if file.filename == '':
+            error = "No file selected"
             return render_template('admin_uploadfile.html', error=error)
 
 
+        if file and allowed_file(file.filename):
 
-        except FileNotFoundError:
-
-            file = request.files['file']
-            # if user does not select file, browser also
-            # submit a empty part without filename
-            if file.filename == '':
-                error = "No file selected"
-                return render_template('admin_uploadfile.html', error=error)
-
-
-            if file and allowed_file(file.filename):
-
-                app.config['TEMP_FOLDER'] = 'Temp'
-                filename = secure_filename(file.filename)
-                print(filename)
+            app.config['TEMP_FOLDER'] = 'Temp'
+            filename = secure_filename(file.filename)
+            print(filename)
 
 
 
-                file.save(os.path.join('Temp', filename))
+            file.save(os.path.join('Temp', filename))
 
-                path=get_file_path(field)
+            path=get_file_path(field)
 
-                preprocessTweets(tweetdate=tweetdate,file=filename,storeFolder=path)
+            preprocessTweets(tweetdate=tweetdate,file=filename,storeFolder=path)
 
-                return render_template('home.html')
-            error="Invalid file type"
-            return render_template('admin_uploadfile.html', error=error)
+            return render_template('home.html')
+        error="Invalid file type"
+        return render_template('admin_uploadfile.html', error=error)
 
 
 
