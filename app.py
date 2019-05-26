@@ -59,6 +59,8 @@ def get_file_path(field):
 
 @app.route('/upload', methods = ['GET', 'POST'])
 def upload():
+    print(request.form["tweetdate"])
+
     if request.method == 'POST':
         field = request.form["field"]
         tweetdate = request.form["tweetdate"]
@@ -73,13 +75,6 @@ def upload():
             error="No file selected"
 
             return render_template('admin_uploadfile.html', error=error)
-        file = request.files['file']
-        # if user does not select file, browser also
-        # submit a empty part without filename
-        if file.filename == '':
-            error = "No file selected"
-            return render_template('admin_uploadfile.html', error=error)
-
         try:
             # write to permanant store
             processedfolder=get_file_path(field)
@@ -90,6 +85,13 @@ def upload():
 
 
         except FileNotFoundError:
+
+            file = request.files['file']
+            # if user does not select file, browser also
+            # submit a empty part without filename
+            if file.filename == '':
+                error = "No file selected"
+                return render_template('admin_uploadfile.html', error=error)
 
 
             if file and allowed_file(file.filename):
