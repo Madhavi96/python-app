@@ -12,6 +12,7 @@ months=["October 2018","November 2018","December 2018","January 2019","February 
 monthsdictionary={"October 2018":0,"November 2018":1,"December 2018":2,"January 2019":3,"February 2019":4,"March 2019":5,"April 2019":6}
 
 def getFuturePlot(end=None,topic_number=None):
+
     with open(files[topic_number] , 'r') as csvfile:
         dates = []
         prob = []

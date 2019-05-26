@@ -79,7 +79,7 @@ def uploadcheck():
 
 @app.route('/upload', methods = ['GET', 'POST'])
 def upload():
-  
+
 
     if request.method == 'POST':
         field = request.form["field"]
@@ -172,7 +172,7 @@ def testpy():
                         write=[int(i), dataseries[i]['annotes'][year_i], xdates[year_i], dataseries[i]['data'][year_i]]
                         writer.writerow(write)
                         print(write)
-
+            app.config['TOPICS_VIEWED'] = True
             return render_template('testgraph.html', xdates=renderlist[0], dataseries=renderlist[1], articles=renderlist[2])
 
 
@@ -194,7 +194,7 @@ def testpy():
                 f.write(jsonstr + "\n")
             f.flush()
             f.close()
-
+        app.config['TOPICS_VIEWED'] = True
         return render_template('testgraph.html', xdates=xdates, dataseries=dataseries,articles=articles)
     return
 
@@ -207,16 +207,20 @@ def testfuturepy():
 
         end_date = result["end"]
 
-        getdict = getFuturePlot(topic_number=topic,end=end_date)
-        if getdict == "":
-            error="Invalid End Month"
-            #raise ValueError
+        if app.config['TOPICS_VIEWED'] == True:
+            getdict = getFuturePlot(topic_number=topic, end=end_date)
+            if getdict == "":
+                error = "Invalid End Month"
+                # raise ValueError
+                return render_template('viewfuturepaths.html', error=error)
+
+            dataseries = getdict["prob"]
+            xdates = getdict["dates"]
+            annotes = getdict["annotes"]
+        else:
+            error = "First view a topic evolution, before any predictions!"
+            # raise ValueError
             return render_template('viewfuturepaths.html', error=error)
-
-
-        dataseries = getdict["prob"]
-        xdates = getdict["dates"]
-        annotes=getdict["annotes"]
 
     return render_template('testfuturegraph.html', xdates=xdates, dataseries= dataseries,annotes=annotes)
 
