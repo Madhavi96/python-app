@@ -207,7 +207,7 @@ def testfuturepy():
 
         end_date = result["end"]
 
-        df = pd.read_csv('OutputDTM0')  # or pd.read_excel(filename) for xls file
+        df = pd.read_csv('OutputDTM0.csv')  # or pd.read_excel(filename) for xls file
         no_paths_viewed=df.empty  # will return True if the dataframe is empty or False if not.
 
         if no_paths_viewed == False:
