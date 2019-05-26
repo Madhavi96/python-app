@@ -16,21 +16,53 @@ polarticles=[
 ]
 
 eduarticles=[
-    "Education Experts Explain the Role Teachers Would Play for Students"
-    ,"Social-Emotional Intelligence Is Missing From School. Here's Why"
-    ,"Lindsey Graham 2016: New memoir blunt about upbringing "
-    ,"Next Education disrupting education segment, bid to top Pearson"
-    ,"Delhi school divided: Hindu and Muslim"
+    "Adult Education"
+    ,"Gauteng Department of Education"
+    ,"Free kids Education"
+    ,"Good education in Delhi"
+    ,"Education of girls"
+    ,"Future health education free"
+    ,"Dana foundation-sleep sense education"
+    ,"Team education"
+    ,"Remix Of 'Old Town Road' for hard education"
+    ,"Lindsey Graham Kids Education"
+    ,"National teachers education"
+    ,"School education system"
+    ,"Muslim education system"
+    ,"Quit schooling Naira -Naigeria"
+    ,"CBSE-Central Board of Secondary Education Results"
+    ,"Next Education India Pvt Ltd"
+    ,"Movie education supports students today"
+    ,"School children education solutions"
+    ,"Work group in Gauteng"
+    ,"Government budget for state education "
+    ,"Public education systems"
 
 ]
 terarticles=[
     "Why white nationalist terrorism is a global threat "
     ,"hindu terror goes unpunished in India"
     ,"Masood Azhar is a Pakistani national who received training in a seminary and preached terror."
-    ,"Terrorism in Pakistan "
+
     ,"Shocked after Pulwama terror attack: Virat Kohli grieves "
     ,"FBI probing Antifa plot to buy guns from Mexican cartel"
     ,"Gadchiroli Naxal attack exposes Modi govt's hollow claims of securing India"
+    ,"Antifa with guns from cartel for Rebellion - Terrosism-India"
+    ,"Stop India supremacy white terrorism -Modi"
+    ,"British public urge high support -stand against terrorism"
+
+
+    ,"Domestic terrorism controlled by Pakistan Army Unit"
+    ,"Hate common radical Islamic terriorism in Pakistan"
+    ,"Legitimate reasons for domestic terrorism,violance"
+    ,"Terrorism, violence via Women as Naxals attackers"
+    ,"Stop Azhar Mazood muslim terrorism in Pakistan"
+    ,"criticism on jihadi islam terrorism"
+    ,"Diplomatic victory in India"
+    ,"Masood Azhar attacks Gadchiroli naxals"
+    ,"Modi-India supports israel responsible-bengali terrorist attacks"
+    ,"Homeland disbands domestic terrorism units"
+    ,"Trump,India,Pakistan,China and global terrorism"
 
 
 ]
@@ -50,7 +82,7 @@ def findArticles(field, dataseries):
         mystr=''
         for ele in topic["annotes"]:
             mystr=mystr+" "+ele
-        print(mystr)
+
         articleset.append(mystr)
         featureset = vectorizer.fit_transform(articleset).todense()
 
@@ -61,8 +93,7 @@ def findArticles(field, dataseries):
                 distances.append(dis)
         articleset.pop()
         match=articleset[distances.index(min(distances))]
-        print(match)
-        print(distances)
+
         articles.append(match)
     return articles
 

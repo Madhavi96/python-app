@@ -2,13 +2,13 @@ from flask import render_template
 import os
 from flask import Flask, request
 from werkzeug.utils import secure_filename
+import json
+import csv
 
 ALLOWED_EXTENSIONS =['txt']
 
 app = Flask(__name__)
-#app.config['SESSION_TYPE'] = 'memcached'
-#app.config['SECRET_KEY'] = 'super secret key'
-#sess = Session()
+
 
 from plotter import getPlot
 from predictor import getFuturePlot
@@ -114,20 +114,62 @@ def testpy():
             error = "Invalid Month Range"
             #raise ValueError
             return render_template('viewpaths.html', error=error)
+        resultstore = start_date + end_date
+        if field == '1':
+            storeinfolder = 'result_topics_pol'
+        elif field == '2':
+            storeinfolder = 'result_topics_edu'
+        elif field == '3':
+            storeinfolder = 'result_topics_ter'
 
-        path = get_file_path(field)
-        Handler(storeFolder=path,start=start_date,end=end_date).handle()
+        try:
+            # write to permanant store
+            file = open(os.path.join(storeinfolder, resultstore), 'r')
+            renderlist = []
+            i = 0
+            for line in file:
+                renderlist.append(json.loads(line))
+                print(renderlist[i])
+                i = i + 1
+            print(renderlist[2])
+            # write the topics just viewd-for future plot
+            files = ['OutputDTM0.csv', 'OutputDTM1.csv', 'OutputDTM2.csv', 'OutputDTM3.csv', 'OutputDTM4.csv']
+            xdates = renderlist[0]
+            dataseries = renderlist[1]
 
-        getdict = getPlot()
-        dataseries = getdict["datalist"]
+            for i in range(5):
+                with open(files[i], 'w', encoding='utf-8') as csvfile:
+                    writer = csv.writer(csvfile, delimiter=',')
+                    # Write header
+                    writer.writerow(['TopicID', 'Word', 'Year', 'Probability'])
+
+                    for year_i in range(len(xdates)):
+                        writer.writerow(
+                            [int(i), dataseries[i]['annotes'][year_i], xdates[year_i], dataseries[i]['data'][year_i]])
+
+            return render_template('testgraph.html', xdates=renderlist[0], dataseries=renderlist[1],
+                                   articles=renderlist[2])
 
 
-        articles=findArticles(field,dataseries)
-        print(articles)
+        except FileNotFoundError:
+            path = get_file_path(field)
+            Handler(storeFolder=path, start=start_date, end=end_date).handle()
+            getdict = getPlot()
+            dataseries = getdict["datalist"]
+            articles = findArticles(field, dataseries)
+            print(articles)
+            xdates = getdict["xdates"]
+            print(xdates)
+            print(dataseries)
+            mylist = [xdates, dataseries, articles]
+            f = open(os.path.join(storeinfolder, resultstore), 'w', encoding='utf-8')
 
-        xdates = getdict["xdates"]
-        print(xdates)
-        print(dataseries)
+            for jsonobj in mylist:
+                jsonstr = json.dumps(jsonobj)
+                f.write(jsonstr + "\n")
+            f.flush()
+            f.close()
+
         return render_template('testgraph.html', xdates=xdates, dataseries=dataseries,articles=articles)
     return
 
