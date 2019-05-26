@@ -207,8 +207,14 @@ def testfuturepy():
 
         end_date = result["end"]
 
-        df = pd.read_csv('OutputDTM0.csv')  # or pd.read_excel(filename) for xls file
-        no_paths_viewed=df.empty  # will return True if the dataframe is empty or False if not.
+        with open('OutputDTM0', 'r') as csvfile:
+            csvFileReader = csv.reader(csvfile)
+            next(csvFileReader)
+            next(csvFileReader)
+            for row in csvFileReader:
+                if row == '\n':
+                    no_paths_viewed=True
+            csvfile.close()
 
         if no_paths_viewed == False:
             getdict = getFuturePlot(topic_number=topic, end=end_date)
