@@ -206,7 +206,7 @@ def testfuturepy():
         topic=int(result["topic"])
 
         end_date = result["end"]
-
+        no_paths_viewed = True
         with open('OutputDTM0.csv', 'r') as csvfile:
             csvFileReader = csv.reader(csvfile)
 
@@ -217,7 +217,8 @@ def testfuturepy():
                 else:
                     print(row)
                     no_paths_viewed=False
-                    
+                    break
+
             csvfile.close()
 
         if no_paths_viewed == False:
