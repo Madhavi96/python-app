@@ -206,10 +206,9 @@ def testfuturepy():
         topic=int(result["topic"])
 
         end_date = result["end"]
-        no_paths_viewed = True
-        with open('OutputDTM0.csv', 'r') as csvfile:
-            csvFileReader = csv.reader(csvfile)
-            try:
+        try:
+             with open('OutputDTM0.csv', 'r') as csvfile:
+                csvFileReader = csv.reader(csvfile)
                 for row in csvFileReader:
                     if row != '\n':
                         csvfile.close()
@@ -223,7 +222,7 @@ def testfuturepy():
                         xdates = getdict["dates"]
                         annotes = getdict["annotes"]
 
-            except:
+        except:
                 print("came.........................")
                 error = "First view a topic evolution, before any predictions!"
                 # raise ValueError
