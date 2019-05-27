@@ -32,7 +32,7 @@ def validate():
         result = request.form
         key=result["key"]
         if key==secret_key:
-            return render_template('admin_uploadfile_check.html')
+            return render_template('admin_uploadfile.html')
         else:
             return render_template('adminkey.html')
 
@@ -105,19 +105,22 @@ def upload():
             return render_template('admin_uploadfile.html', error=error)
 
 
-        if file and allowed_file(file.filename):
-
-            app.config['TEMP_FOLDER'] = 'Temp'
+        if file :
+            
             filename = secure_filename(file.filename)
             print(filename)
+            path = get_file_path(field)
+            file.save(os.path.join(path, filename))
+            '''
 
-
-
+            app.config['TEMP_FOLDER'] = 'Temp'
+            
             file.save(os.path.join('Temp', filename))
 
             path=get_file_path(field)
 
             preprocessTweets(tweetdate=tweetdate,file=filename,storeFolder=path)
+            '''
 
             return render_template('home.html')
         error="Invalid file type"
