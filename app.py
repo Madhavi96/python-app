@@ -207,7 +207,7 @@ def testfuturepy():
 
         end_date = result["end"]
 
-        with open('OutputDTM0', 'r') as csvfile:
+        with open('OutputDTM0.csv', 'r') as csvfile:
             csvFileReader = csv.reader(csvfile)
             next(csvFileReader)
             next(csvFileReader)
