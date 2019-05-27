@@ -34,7 +34,6 @@ def getFuturePlot(end,topic_number):
         start_old=months.index(dates[0])
         print(start_old)
         end_old = months.index(dates[-1])
-
         old_dates=months[start_old:end_old+1]
         end_new=times.index(end)
         if end_old >= end_new :

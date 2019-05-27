@@ -20,6 +20,11 @@
                                  </div><br><br><br>
                           {% endif %}
 
+                         {% if success %}
+                            <div class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+                             <p><strong>Success: </strong> {{ success }}
+                                 </div><br><br><br>
+                          {% endif %}
                          <form action = "/upload" method = "POST" enctype = "multipart/form-data">
 
                              Select the Field :

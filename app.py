@@ -79,8 +79,6 @@ def uploadcheck():
 
 @app.route('/upload', methods = ['GET', 'POST'])
 def upload():
-
-
     if request.method == 'POST':
         field = request.form["field"]
         tweetdate = request.form["tweetdate"]
@@ -103,13 +101,12 @@ def upload():
         if file.filename == '':
             error = "No file selected"
             return render_template('admin_uploadfile.html', error=error)
-
-
         if file :
 
             filename = secure_filename(file.filename)
             print(filename)
             path = get_file_path(field)
+            print(path)
             file.save(os.path.join(path, filename))
             '''
 
@@ -121,8 +118,11 @@ def upload():
 
             preprocessTweets(tweetdate=tweetdate,file=filename,storeFolder=path)
             '''
+            success = "Successfully uploaded"
+            return render_template('admin_uploadfile.html', success=success)
 
-            return render_template('home.html')
+            return render_template('admin_uploadfile.html')
+
         error="Invalid file type"
         return render_template('admin_uploadfile.html', error=error)
 
