@@ -33,6 +33,7 @@ def getFuturePlot(end,topic_number):
         print(topic_chain)
         start_old=months.index(dates[0])
         print(start_old)
+        print(dates[-1])
         end_old = months.index(dates[-1])
         old_dates=months[start_old:end_old+1]
         end_new=times.index(end)

@@ -7,7 +7,7 @@ import csv
 import pandas as pd
 
 ALLOWED_EXTENSIONS =['txt']
-
+ALLOWED_FILES =['201810','201811','201812','201901','201902','201903','201904']
 app = Flask(__name__)
 
 from plotter import getPlot
@@ -101,7 +101,7 @@ def upload():
         if file.filename == '':
             error = "No file selected"
             return render_template('admin_uploadfile.html', error=error)
-        if file :
+        if file and file.filename in ALLOWED_FILES:
 
             filename = secure_filename(file.filename)
             print(filename)
@@ -122,7 +122,9 @@ def upload():
             return render_template('admin_uploadfile.html', success=success)
 
             return render_template('admin_uploadfile.html')
-
+        else:
+            error = "Invalid File Name!"
+            return render_template('admin_uploadfile.html', error=error)
         error="Invalid file type"
         return render_template('admin_uploadfile.html', error=error)
 
