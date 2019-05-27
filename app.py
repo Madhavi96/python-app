@@ -206,6 +206,7 @@ def testfuturepy():
         topic=int(result["topic"])
 
         end_date = result["end"]
+        '''
         try:
              with open('OutputDTM0.csv', 'r') as csvfile:
                 csvFileReader = csv.reader(csvfile)
@@ -229,9 +230,34 @@ def testfuturepy():
             error = "First view a topic evolution, before any predictions!"
             # raise ValueError
             return render_template('viewfuturepaths.html', error=error)
+        '''
 
-    return render_template('testfuturegraph.html', xdates=xdates, dataseries= dataseries,annotes=annotes)
+        print("trying.............................")
+        with open('OutputDTM0.csv', 'r') as csvfile:
+            csvFileReader = csv.reader(csvfile)
+            print("woooooooooooooooooooow")
+            for row in csvFileReader:
+                print(row)
+                if row != '\n':
+                    print(row)
+                    # csvfile.close()
+                    getdict = getFuturePlot(topic_number=topic, end=end_date)
+                    if getdict == "":
+                        error = "Invalid End Month"
+                        # raise ValueError
+                        return render_template('viewfuturepaths.html', error=error)
+                    print("row exists.....................................................")
+                    dataseries = getdict["prob"]
+                    xdates = getdict["dates"]
+                    annotes = getdict["annotes"]
+                    return render_template('testfuturegraph.html', xdates=xdates, dataseries=dataseries,
+                                           annotes=annotes)
 
+        print("came.........................")
+        error = "First view a topic evolution, before any predictions!"
+        # raise ValueError
+        return render_template('viewfuturepaths.html', error=error)
+    print("eeeeeeeeeeeeeeeeeeee")
 
 
 
