@@ -224,11 +224,12 @@ def testfuturepy():
                         annotes = getdict["annotes"]
 
             except:
+                print("came.........................")
                 error = "First view a topic evolution, before any predictions!"
                 # raise ValueError
                 return render_template('viewfuturepaths.html', error=error)
 
-        return render_template('testfuturegraph.html', xdates=xdates, dataseries= dataseries,annotes=annotes)
+    return render_template('testfuturegraph.html', xdates=xdates, dataseries= dataseries,annotes=annotes)
 
 
 
