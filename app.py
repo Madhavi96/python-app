@@ -209,34 +209,26 @@ def testfuturepy():
         no_paths_viewed = True
         with open('OutputDTM0.csv', 'r') as csvfile:
             csvFileReader = csv.reader(csvfile)
+            try:
+                for row in csvFileReader:
+                    if row != '\n':
+                        csvfile.close()
+                        getdict = getFuturePlot(topic_number=topic, end=end_date)
+                        if getdict == "":
+                            error = "Invalid End Month"
+                            # raise ValueError
+                            return render_template('viewfuturepaths.html', error=error)
 
-            for row in csvFileReader:
-                if row == '\n':
-                    no_paths_viewed=True
-                    break
-                else:
-                    print(row)
-                    no_paths_viewed=False
-                    break
+                        dataseries = getdict["prob"]
+                        xdates = getdict["dates"]
+                        annotes = getdict["annotes"]
 
-            csvfile.close()
-
-        if no_paths_viewed == False:
-            getdict = getFuturePlot(topic_number=topic, end=end_date)
-            if getdict == "":
-                error = "Invalid End Month"
+            except:
+                error = "First view a topic evolution, before any predictions!"
                 # raise ValueError
                 return render_template('viewfuturepaths.html', error=error)
 
-            dataseries = getdict["prob"]
-            xdates = getdict["dates"]
-            annotes = getdict["annotes"]
-        else:
-            error = "First view a topic evolution, before any predictions!"
-            # raise ValueError
-            return render_template('viewfuturepaths.html', error=error)
-
-    return render_template('testfuturegraph.html', xdates=xdates, dataseries= dataseries,annotes=annotes)
+        return render_template('testfuturegraph.html', xdates=xdates, dataseries= dataseries,annotes=annotes)
 
 
 
