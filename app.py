@@ -106,7 +106,7 @@ def upload():
 
 
         if file :
-            
+
             filename = secure_filename(file.filename)
             print(filename)
             path = get_file_path(field)
