@@ -211,6 +211,7 @@ def testfuturepy():
                 csvFileReader = csv.reader(csvfile)
                 for row in csvFileReader:
                     if row != '\n':
+                        print(row)
                         csvfile.close()
                         getdict = getFuturePlot(topic_number=topic, end=end_date)
                         if getdict == "":
@@ -222,7 +223,7 @@ def testfuturepy():
                         xdates = getdict["dates"]
                         annotes = getdict["annotes"]
 
-        except:
+        except :
                 print("came.........................")
                 error = "First view a topic evolution, before any predictions!"
                 # raise ValueError
