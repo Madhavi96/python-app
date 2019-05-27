@@ -5,11 +5,14 @@ from sklearn.svm import SVR
 files=['OutputDTM0.csv','OutputDTM1.csv','OutputDTM2.csv','OutputDTM3.csv','OutputDTM4.csv']
 
 
+
+
 times = ["201810", "201811", "201812", "201901", "201902", "201903", "201904"]
 monthsdict = {"201810": "October 2018", "201811": "November 2018", "201812": "Decemebr 2018", "201901": "January 2019",
                "201902": "February 2019", "201903": "March 2019", "201904": "April 2019"}
 months=["October 2018","November 2018","December 2018","January 2019","February 2019","March 2019","April 2019"]
 monthsdictionary={"October 2018":0,"November 2018":1,"December 2018":2,"January 2019":3,"February 2019":4,"March 2019":5,"April 2019":6}
+
 
 def getFuturePlot(end,topic_number):
 
