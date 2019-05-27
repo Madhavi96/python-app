@@ -209,8 +209,7 @@ def testfuturepy():
 
         with open('OutputDTM0.csv', 'r') as csvfile:
             csvFileReader = csv.reader(csvfile)
-            next(csvFileReader)
-            next(csvFileReader)
+           
             for row in csvFileReader:
                 if row == '\n':
                     no_paths_viewed=True
